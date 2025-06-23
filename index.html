@@ -8,6 +8,7 @@
     :root {
       --background-light: linear-gradient(135deg, #fdfbfb, #ebedee);
       --background-dark: #1e1e1e;
+      --cert-background: #ffffff;
       --text-light: #333;
       --text-dark: #f4f4f4;
     }
@@ -90,12 +91,18 @@
     }
 
     .cert-section {
-      background: linear-gradient(to bottom, #ffffff, #e0f7fa);
+      background: var(--cert-background);
       padding: 40px 20px;
     }
 
     body.dark-mode .cert-section {
-      background: #2b2b2b;
+      background: #1e1e1e;
+      color: #f4f4f4;
+    }
+    body.dark-mode .cert-card {
+      background: #2c2c2c;
+      border-color: #ffa500;
+      color: #f4f4f4;
     }
 
     .cert-wrapper {
@@ -163,7 +170,12 @@
     <img src="profile.jpg" style="width: 140px; height: 140px; border-radius: 50%; margin-bottom: 15px; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.4)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.2)';">
     <h1>Shaik Sahil Kishwar</h1>
     <p>Full Stack Web Developer | Java | Spring Boot | MySQL | HTML | CSS | JavaScript</p>
-  </header>
+  <div style="margin-top: 10px;">
+  <a href="Shaik-Sahil-Kishwar-Resume.pdf" target="_blank" style="display: inline-block; padding: 12px 25px; background: linear-gradient(45deg, #36d1dc, #5b86e5); color: white; text-decoration: none; border-radius: 30px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+    Download My Resume
+  </a>
+</div>
+</header>
 
   <section>
     <h2>About Me</h2>
@@ -203,7 +215,23 @@
     </div>
   </section>
 
-  <section class="cert-section">
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <h3>B.Tech in Computer Science and Business Systems</h3>
+    <p>Excel Engineering College (2021 – 2025)</p>
+  </div>
+  <div class="card">
+    <h3>Higher Secondary</h3>
+    <p>Narayana Jr. College (2019 – 2020)</p>
+  </div>
+  <div class="card">
+    <h3>Secondary Education</h3>
+    <p>Bashyam Public School (2018 – 2019)</p>
+  </div>
+</section>
+
+<section class="cert-section">
     <h2 style="text-align: center;">Certifications</h2>
     <div class="cert-wrapper">
       <div class="cert-card">
